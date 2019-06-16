@@ -6,16 +6,10 @@
 #include <xmlrpc-c/base.h>
 #include <xmlrpc-c/client.h>
 
+#include "config.h"
+
 #define NAME "Atheme/PAM Identify Validator"
 #define VERSION "1.0"
-
-#ifndef NETNAME
-#   define NETNAME "Misconfigured Network"
-#endif
-
-#ifndef NETURL
-# 	define NETURL "http://localhost:8080/xmlrpc"
-#endif
 
 #define XMLRPC_CLEANUP xmlrpc_env_clean(&env); xmlrpc_client_cleanup();
 
